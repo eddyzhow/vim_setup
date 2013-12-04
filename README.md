@@ -1,6 +1,6 @@
 vim_setup
 =========
-##### Installing your Vim environment on another machine
+##### Installing eddyzhow Vim environment on another machine
 
 ```
 cd ~
