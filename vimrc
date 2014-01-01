@@ -23,3 +23,6 @@ colorscheme kolor
 " jslint2 configuration
 let jshint2_save=1
 
+" T-comment configuration
+map <leader>c <c-_><c-_>
+
