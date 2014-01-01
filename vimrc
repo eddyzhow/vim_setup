@@ -20,3 +20,6 @@ let g:NERDTreeDirArrows=0
 set t_Co=256
 colorscheme kolor
 
+" jslint2 configuration
+let jshint2_save=1
+
