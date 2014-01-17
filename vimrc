@@ -26,6 +26,9 @@ let jshint2_save=1
 " T-comment configuration
 map <leader>c <c-_><c-_>
 
+" powerline configuration
+let g:airline_powerline_fonts = 1
+
 """""""""""""""""""""""""
 " Temp stuff from Suhrid
 """""""""""""""""""""""""
