@@ -15,6 +15,9 @@ autocmd vimenter * NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrows=0
+map  <S-l> :tabn<CR>
+map  <S-h> :tabp<CR>
+map  <S-n> :tabnew<CR>
 
 " Kolor theme configuration
 set t_Co=256
