@@ -100,5 +100,8 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
     nnoremap <silent> <leader>t :TagbarToggle<CR>
 "}
 
-" PEP8 validation
-let g:pep8_map='<leader>8'
+" Flask8 syntax and style validation
+" Don't know why they put thing in ftplugin/ instead of just plugin/
+so ~/.vim/bundle/vim-flake8/ftplugin/python_flake8.vim
+autocmd FileType python map <buffer> <F8> :call Flake8()<CR>
+autocmd BufWritePost *.py call Flake8()
