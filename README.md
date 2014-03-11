@@ -17,11 +17,9 @@ cd ~/.vim/
 git submodule add http://github.com/user/someplugin.git bundle/someplugin
 git add .
 git commit -m "Install plugin bundle as a submodule."
-
 ```
 
 ##### External modules installation
 ```
 sudo pip install flask8
-
 ```
