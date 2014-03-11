@@ -29,11 +29,7 @@ map <leader>c <c-_><c-_>
 " powerline configuration
 let g:airline_powerline_fonts = 1
 
-"""""""""""""""""""""""""
-" Temp stuff from Suhrid
-"""""""""""""""""""""""""
-
-"Set line number
+" Set line number
 set nu
 
 " Ignore compiled files
@@ -42,12 +38,12 @@ set wildignore=*.o,*~,*.pyc
 " this turns off physical line wrapping (ie: automatic insertion of newlines)
 set textwidth=0 wrapmargin=0
 
-"always reload buffer when external changes detected
+" always reload buffer when external changes detected
 set autoread
 " this enables "visual" wrapping
 set wrap
 
-"easier navigation between split windows
+" easier navigation between split windows
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
@@ -58,7 +54,7 @@ set nobackup
 set nowb
 set noswapfile
 
-"Remove trailing whitespace
+" Remove trailing whitespace
 nnoremap <silent> <leader>1 :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 " Return to last edit position when opening files (You want this!)
@@ -75,7 +71,7 @@ cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q')
 cnoreabbrev <expr> Qa ((getcmdtype() is# ':' && getcmdline() is#'Qa')?('qa'):('Qa'))
 cnoreabbrev <expr> QA ((getcmdtype() is# ':' && getcmdline() is#'QA')?('qa'):('QA'))
 
-"Make the 80th column stand out
+" Make the 80th column stand out
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%80v', 100)
 
@@ -96,3 +92,13 @@ augroup END
 " Ignore certain type of files in NERDTree
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
             \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
+
+" Tagbar
+"{
+    let g:tagbar_autoclose = 1
+    let g:tagbar_autofocus = 1
+    nnoremap <silent> <leader>t :TagbarToggle<CR>
+"}
+
+" PEP8 validation
+let g:pep8_map='<leader>8'
