@@ -19,3 +19,9 @@ git add .
 git commit -m "Install plugin bundle as a submodule."
 
 ```
+
+##### External modules installation
+```
+sudo pip install flask8
+
+```
