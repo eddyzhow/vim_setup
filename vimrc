@@ -1,4 +1,7 @@
 execute pathogen#infect()
+" Make CoffeeScript command work
+filetype plugin indent on
+
 set smartindent
 set tabstop=4
 set shiftwidth=4
