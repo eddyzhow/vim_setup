@@ -113,4 +113,4 @@ autocmd BufWritePost *.py call Flake8()
 " folding is disabled by default 
 " but can be quickly toggled per-file by hitting zi
 autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+autocmd BufNewFile,BufReadPost *.coffee setl tabstop=2 shiftwidth=2
