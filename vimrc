@@ -108,3 +108,9 @@ let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
 so ~/.vim/bundle/vim-flake8/ftplugin/python_flake8.vim
 autocmd FileType python map <buffer> <F8> :call Flake8()<CR>
 autocmd BufWritePost *.py call Flake8()
+
+" Make vim CoffeeScript friendly
+" folding is disabled by default 
+" but can be quickly toggled per-file by hitting zi
+autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
