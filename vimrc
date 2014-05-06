@@ -26,6 +26,9 @@ map  <S-n> :tabnew<CR>
 set t_Co=256
 colorscheme kolor
 
+" configure html indentation
+autocmd BufNewFile,BufReadPost *.html setl tabstop=2 shiftwidth=2
+
 " jslint2 configuration
 let jshint2_save=1
 
